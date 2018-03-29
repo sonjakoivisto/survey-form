@@ -1,0 +1,81 @@
+h1 {
+    text-align: center;
+}
+
+#description{
+    font-size: 115%;
+    padding: 1em;
+}
+
+body {
+    background-image: url("../img/background-colored-parquet-450066.jpg");
+    background-color: rgb(255,255,240);
+}
+
+.wrapper {
+    border: solid red 1px;
+    background-color: rgb(255,255,240);
+    margin: 2em;
+}
+
+#personal-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2em;
+}
+
+#workout {
+    grid-template-columns: 1fr 1fr;
+    margin: 2em;
+}
+#workout > div {
+    padding: 1em;
+}
+#whatsports {
+    min-height: 5em;
+    min-width: 16em;
+    text-align: top;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.slider:hover {
+    opacity: 1;
+    color: royalblue;
+}
+
+#range-legend{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#range-legend >:nth-child(2){
+    text-align: center;
+}
+
+#range-legend >:last-child{
+    text-align: end;
+} 
+#stories{
+    min-width: 20em;
+    min-height: 10em;
+}
+
+#submit{
+    position: relative;
+    opacity: 0.8;
+    min-width: 6em;
+    min-height: 4em;
+    border: solid red 1px;
+}
+
+#submit: hover {
+    opacity: 1;
+}
