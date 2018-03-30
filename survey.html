@@ -27,6 +27,7 @@
 <form id="survey-form" action="/submit-form">
 <fieldset id="personal-info">
 <legend> Personal information</legend>
+<div>
 Name:<br>
 <input type="text" name="Name" id="name" placeholder="Your name" required><br>
 
@@ -36,6 +37,7 @@ Email:<br>
 Age:<br>
 <input type="number" min="0" max="120" name="Age" placeholder="Age" id="number"><br>
 
+<div id="gender">
 Gender:<br>
 <select name"gender">
 <option value="disabled selected">Choose</option>
@@ -44,7 +46,9 @@ Gender:<br>
 <option value="other">Other</option>
 </select>
 <br>
+</div>
 
+<div id="education">
 Level of education:<br>
 <select name="education" id="dropdown">
 <option value="disabled selected">Choose</option>
@@ -55,10 +59,13 @@ Level of education:<br>
 <option value="doc">Doctoral or higher</option>
 </select>
 <br>
+</div>
 
+<div id="field">
 Field:<br>
 <input type="text" placeholder="Field of study" name="field"><br>
-
+</div>
+</div>
 </fieldset>
 
 <fieldset id="workout">

@@ -22,15 +22,24 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2em;
+    line-height: 1.5em;
+}
+#personal-info> div{
+    margin: 1em;
+    padding-right: 2em;
 }
 
+
 #workout {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em;
+    line-height: 1.5em;
 }
 #workout > div {
     padding: 1em;
 }
+
 #whatsports {
     min-height: 5em;
     min-width: 16em;
@@ -70,12 +79,60 @@ body {
 
 #submit{
     position: relative;
+    bottom: 3em;
     opacity: 0.8;
     min-width: 6em;
     min-height: 4em;
-    border: solid red 1px;
+    border: antiquewhite solid 1px;
+    box-shadow: 4px 2px #888888;
 }
 
 #submit: hover {
     opacity: 1;
+}
+
+@media (min-width: 600px){
+
+#personal-info{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-areas: 
+"name email"
+"age gender"
+"education field"
+}
+
+#name {
+    grid-area: name;
+}
+#email {
+    grid-area: email;
+}
+#number{
+    grid-area: age;
+}
+#gender{
+    grid-area: gender;
+}
+#education{
+    grid-area: education;
+}
+#field{
+    grid-area: field;
+}
+
+#workout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+#submit{
+    border: red solid 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
 }
