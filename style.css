@@ -18,7 +18,7 @@ body {
     margin: 2em;
 }
 
-#personal-info {
+#section1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2em;
@@ -32,7 +32,7 @@ body {
 
 #workout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     margin: 2em;
     line-height: 1.5em;
 }
@@ -79,7 +79,7 @@ body {
 
 #submit{
     position: relative;
-    bottom: 3em;
+    bottom: 0em;
     opacity: 0.8;
     min-width: 6em;
     min-height: 4em;
@@ -94,7 +94,7 @@ body {
 
 @media (min-width: 600px){
 
-#personal-info{
+#section1{
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-areas: 

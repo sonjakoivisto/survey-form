@@ -17,125 +17,158 @@
 <body>
     <div class="wrapper">
 
-<h1 id="title">Sports and I</h1>
-<p id="description">What kind of relationship do you have with sports? Are you a long-term sports 
-    enthusiastic or do you just go to the gym now and then not to be labeled as a coach-potato? Fill in your 
-    insights into exercising.</p>
+        <h1 id="title">Sports and I</h1>
+        <p id="description">What kind of relationship do you have with sports? Are you a long-term sports enthusiastic or do you just go to the
+            gym now and then not to be labeled as a coach-potato? Fill in your insights into exercising.</p>
 
 
 
-<form id="survey-form" action="/submit-form">
-<fieldset id="personal-info">
-<legend> Personal information</legend>
-<div>
+        <form id="survey-form" action="/submit-form">
+            <section id="section1">
+                <fieldset id="personal-info">
+                    <legend> Personal information</legend>
 
-<label id="name-label" for="name">Name: </label><br>
-<input type="text" name="Name" id="name" placeholder="Your name" required><br>
+                    
+                        <div>
+                            <label id="name-label" for="name">Name: </label>
+                            <br>
+                            <input type="text" name="Name" id="name" placeholder="Your name" required>
+                            <br>
 
-<label id="email-label" for="email">Email: </label><br>
-<input type="email" id="email" placeholder="Your email" required><br>
+                            <label id="email-label" for="email">Email: </label>
+                            <br>
+                            <input type="email" id="email" placeholder="Your email" required>
+                            <br>
 
-<label id="number-label" for="age">Age: </label><br>
-<input type="number" min="0" max="120" name="Age" placeholder="Age" id="number"><br>
-
-<div id="gender">
-Gender:<br>
-<select name"gender">
-<option value="disabled selected">Choose</option>
-<option value="male">Male</option>
-<option value="female">Female</option>
-<option value="other">Other</option>
-</select>
-<br>
-</div>
-
-<div id="education">
-Level of education:<br>
-<select name="education" id="dropdown">
-<option value="disabled selected">Choose</option>
-<option value="secondary">Secondary school</option>
-<option value="highschool">High School</option>
-<option value="undergrad">Undergraduate (eg. Bachelor's)</option>
-<option value="grad">Graduate (eg. Master's)</option>
-<option value="doc">Doctoral or higher</option>
-</select>
-<br>
-</div>
-
-<div id="field">
-Field:<br>
-<input type="text" placeholder="Field of study" name="field"><br>
-</div>
-</div>
-</fieldset>
-
-<fieldset id="workout">
-    <legend>Working out</legend>
-<div>
-How much do you exercise?<br>
-<input type="radio" name="exercise" value="rarely">Irregularly, not every month <br>
-<input type="radio" name="exercise" value="monthly">Few times a month <br>
-<input type="radio" name="exercise" value="weekly">Every week <br>
-<input type="radio" name="exercise" value="often">Many times a week <br>
-</div>
-
-<div>
-What is your motivation for exercising?<br>
-<input type="checkbox" name="motivation" value="healthy">Staying healthy <br>
-<input type="checkbox" name="motivation" value="physical">Bettering my physical capasity and skills<br>
-<input type="checkbox" name="motivation" value="fun">Having fun <br>
-<input type="checkbox" name="motivation" value="outlook">Looking better <br>
-<input type="checkbox" name="motivation" value="people">Meeting people <br>
-Something else: <input type="text" name="motivation" value="what?"> <br>
-</div>
-
-<div>
-What sports do you do?<br>
-<input type="textarea" id="whatsports"><br>
-</div>
-
-<div>
-Which describes the best your relationship with sports?<br>
-<input type="radio" name="describe" value="dead">Never passionate, died long ago<br>
-<input type="radio" name="describe" value="childhood">Childhood friend, we get together every once in a while<br>
-<input type="radio" name="describe" value="on-off">On and off<br>
-<input type="radio" name="describe" value="stable">Stable, same routines year after year<br>
-<input type="radio" name="describe" value="love">The love of my life<br>
-</div>
-
-<div>
-How serious do you get with sports?<br>
-    <div class="slidecontainer">
-            <input type="range" min="1" max="100" value="50" class="slider" id="range">
-    </div>
-<div  id="range-legend">
-<p>Sunday Gaming</p>
-<p>Tasteful playing</p>
-<p>All in or nothing</p>
-</div>
-</div>
-<div>
-        Tell us about your 
-        most touching moments with sports or your worst injuries.<br>
-<input type="text" id="stories" placeholder="Have some sports stories worth sharing?">
-</div>
+                            <label id="number-label" for="age">Age: </label>
+                            <br>
+                            <input type="number" min="0" max="120" name="Age" placeholder="Age" id="number">
+                            <br>
+                        </div>
+                        <div>
+                            <div id="gender">
+                                Gender:
+                                <br>
+                                <select name "gender">
+                                    <option value="disabled selected">Choose</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <br>
+                            </div>
 
 
-</fieldset>
+                            <div id="education">
+                                Level of education:
+                                <br>
+                                <select name="education" id="dropdown">
+                                    <option value="disabled selected">Choose</option>
+                                    <option value="secondary">Secondary school</option>
+                                    <option value="highschool">High School</option>
+                                    <option value="undergrad">Undergraduate (eg. Bachelor's)</option>
+                                    <option value="grad">Graduate (eg. Master's)</option>
+                                    <option value="doc">Doctoral or higher</option>
+                                </select>
+                                <br>
+                            </div>
+
+                            <div id="field">
+                                Field:
+                                <br>
+                                <input type="text" placeholder="Field of study" name="field">
+                                <br>
+                            </div>
+                        </div>
+                </fieldset>
+            </section>
+            
+            <fieldset id="workout">
+                <legend>Working out</legend>
+                <div>
+                    How much do you exercise?
+                    <br>
+                    <input type="radio" name="exercise" value="rarely">Irregularly, not every month
+                    <br>
+                    <input type="radio" name="exercise" value="monthly">Few times a month
+                    <br>
+                    <input type="radio" name="exercise" value="weekly">Every week
+                    <br>
+                    <input type="radio" name="exercise" value="often">Many times a week
+                    <br>
+                </div>
+
+                <div>
+                    What is your motivation for exercising?
+                    <br>
+                    <input type="checkbox" name="motivation" value="healthy">Staying healthy
+                    <br>
+                    <input type="checkbox" name="motivation" value="physical">Bettering my physical capasity and skills
+                    <br>
+                    <input type="checkbox" name="motivation" value="fun">Having fun
+                    <br>
+                    <input type="checkbox" name="motivation" value="outlook">Looking better
+                    <br>
+                    <input type="checkbox" name="motivation" value="people">Meeting people
+                    <br> Something else:
+                    <input type="text" name="motivation" value="what?">
+                    <br>
+                </div>
+
+                <div>
+                    What sports do you do?
+                    <br>
+                    <input type="textarea" id="whatsports">
+                    <br>
+                </div>
+
+                <div>
+                    Which describes the best your relationship with sports?
+                    <br>
+                    <input type="radio" name="describe" value="dead">Never passionate, died long ago
+                    <br>
+                    <input type="radio" name="describe" value="childhood">Childhood friend, we get together every once in a while
+                    <br>
+                    <input type="radio" name="describe" value="on-off">On and off
+                    <br>
+                    <input type="radio" name="describe" value="stable">Stable, same routines year after year
+                    <br>
+                    <input type="radio" name="describe" value="love">The love of my life
+                    <br>
+                </div>
+
+                <div>
+                    How serious do you get with sports?
+                    <br>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="range">
+                    </div>
+                    <div id="range-legend">
+                        <p>Sunday Gaming</p>
+                        <p>Tasteful playing</p>
+                        <p>All in or nothing</p>
+                    </div>
+                </div>
+                <div>
+                    Tell us about your most touching moments with sports or your worst injuries.
+                    <br>
+                    <input type="text" id="stories" placeholder="Have some sports stories worth sharing?">
+                </div>
 
 
-<button type="submit" id="submit">Submit me!</button>
+            </fieldset>
+
+
+            <button type="submit" id="submit">Submit me!</button>
 
 
 
 
 
 
-</form>
+        </form>
 
-</div>
-
-
+        </div>
 
 
 
@@ -149,5 +182,7 @@ How serious do you get with sports?<br>
 
 
 
-    
+
+
+
 </body>
